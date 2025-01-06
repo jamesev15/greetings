@@ -13,9 +13,9 @@ pipeline {
             }
         }
 
-        stage('inspecting files'){
+        stage('get the last tag'){
             steps {
-                sh 'ls .'
+                sh 'git tag --sort=-v:refname | head -n 1'
             }
         }
     }
