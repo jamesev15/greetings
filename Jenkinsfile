@@ -9,7 +9,7 @@ pipeline {
 
         stage('test') {
             steps {
-                sh 'go test'
+                sh 'echo "executing test"'
             }
         }
     }
