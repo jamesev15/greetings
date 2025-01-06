@@ -12,5 +12,11 @@ pipeline {
                 sh 'echo "executing test"'
             }
         }
+
+        stage('inspecting files'){
+            steps {
+                sh 'ls .'
+            }
+        }
     }
 }
