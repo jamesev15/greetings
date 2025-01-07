@@ -13,10 +13,10 @@ pipeline {
             }
         }
 
-        stage('get the last tag'){
-            steps {
-                sh 'git tag --sort=-v:refname | head -n 1'
-            }
-        }
+        // stage('get the last tag'){
+        //     steps {
+        //         sh 'git tag --sort=-v:refname | head -n 1'
+        //     }
+        // }
     }
 }
